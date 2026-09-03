@@ -4,13 +4,23 @@
 **Fecha:** Septiembre 2026  
 
 ---
+# Índice de Contenidos
+  - 📖Sobre el Proyecto
+  - 🗓️Bitácora de desarrollo
+  - 💡 Proceso Creativo y Enfoque Visual
+  - 🛠️Stack Tecnológico]
+  - 🎨Herramientas y Recursos de Diseño
+  - 🖥️Vista previa - escritorio y móvil
+    - Escritorio
+    - Móvil
+  - 🚀 Instalación y Ejecución Local
 
-## 📖 Sobre el Proyecto
+## 📖Sobre el Proyecto
 **Jóvenes en Órbita (JEO)** es una plataforma web inspirada en la exploración y el dinamismo del **espacio exterior**. El objetivo principal es ofrecer una experiencia visual inmersiva mediante el uso de luces, efectos de brillo (*glow*) y maquetaciones dinámicas que representan el conocimiento iluminando el cosmos. Cada sección cuenta con una identidad única en la organización de su información, manteniendo una coherencia estética espacial, mientras representa la esencia de JEO.
 
 ---
-
-## 🗓️ Bitácora de Desarrollo (Hoja de Ruta)
+  
+## 🗓️Bitácora de desarrollo
 
 | Fecha | Fase | Tareas y Logros |
 | :--- | :--- | :--- |
@@ -20,7 +30,7 @@
 
 ---
 
-## 💡 Proceso Creativo y Enfoque Visual
+## 💡Proceso Creativo y Enfoque Visual
 
 1. **La Idea Base:** El concepto central gira en torno al **espacio exterior**. Busqué transmitir la sensación de un universo solitario que se va iluminando progresivamente a medida que el usuario interactúa con la página.
 2. **Prototipado con IA:** Utilicé [Stitch](https://stitch.withgoogle.com/) para iterar y moldear la estructura general del sitio antes de pasar al código.
@@ -28,7 +38,7 @@
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️Stack Tecnológico
 
 * **Frontend:** HTML5, CSS3, TypeScript, Bootstrap
 * **Backend:** Node.js
@@ -36,7 +46,7 @@
 
 ---
 
-## 🎨 Herramientas y Recursos de Diseño
+## 🎨Herramientas y Recursos de Diseño
 
 * [web.dev](https://web.dev/) — Buenas prácticas de desarrollo y rendimiento web.
 * [Animista](https://animista.net/) — Generación y prueba de animaciones CSS.
@@ -44,6 +54,13 @@
 * [CSS Grid Generator](https://cssgridgenerator.io/) — Maquetación de cuadrículas dinámicas.
 
 ---
+
+## 🖥️Vista previa - escritorio y móvil
+### Escritorio
+<img width="1365" height="626" alt="hero-escritorio" src="https://github.com/user-attachments/assets/f75ddd6b-b3ff-4c40-aabd-4c25fec090c4" />
+
+### Móvil
+<img width="auto" height="626" alt="hero-movil" src="https://github.com/user-attachments/assets/244a61ff-91df-4302-9b6c-64a68638d172" />
 
 ## 🚀 Instalación y Ejecución Local
 
