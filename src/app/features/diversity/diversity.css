@@ -1,0 +1,83 @@
+.div-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sec-div-dest {
+    color: yellow;
+}
+
+.parent {
+    background-color: rgb(1, 1, 59);
+    border-radius: 16px;
+    padding: 32px 24px;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    /* margin: 50px; */
+    width: 100%;
+    max-width: 1100px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.div-img-container {
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* grid-column: span 1 / span 1; */
+}
+
+.div-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.div-text-container {
+    /* grid-column: span 1 / span 1; */
+    /* grid-column-start: 2; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div-text {
+    font-size: 1rem;
+    font-family: monospace;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+
+    .parent {
+        /* Pasa de 2 columnas a 1 sola columna vertical */
+        grid-template-columns: 1fr;
+        gap: 1px;
+        margin: 0;
+        /* Evita desbordamiento en pantallas chicas */
+        padding: 10px 15px;
+    }
+
+    /* La imagen se mantiene automáticamente arriba por el orden natural del HTML */
+    .div-img-container {
+        padding: 1px;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        /* Centra la card en móvil */
+        grid-row: 1;
+    }
+
+    .div-text-container {
+        padding: 5px;
+        text-align: left;
+        grid-row: 2;
+    }
+}

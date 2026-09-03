@@ -1,0 +1,181 @@
+.vis-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sec-vis-dest {
+    color: yellow;
+}
+
+/* VISTA ESCRITORIO */
+.parent-vis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    max-width: 1200px;
+    width: 100%;
+    align-items: start;
+}
+
+.sub-parent01 {
+    grid-column: span 1/ span 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .vis-img-container {
+        border-radius: 30px;
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .vis-img {
+            border-radius: 30px;
+            box-shadow:
+                0 10px 50px rgba(160, 187, 7, 0.4),
+                0 0 50px rgba(13, 27, 50, 0.8);
+
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .vis-text-container {
+        grid-column: span 1 / span 1;
+        /* grid-column-start: 2; */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px;
+
+        .vis-text {
+            font-size: 1.1rem;
+            font-family: monospace;
+            line-height: 1.7;
+            margin: 0;
+        }
+    }
+
+    .tag-badge {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+    }
+
+}
+
+.sub-parent02 {
+    gap: 16px;
+
+    .card {
+        max-width: 100% !important;
+        color: white;
+        gap: 16px;
+        box-shadow:
+            0 10px 50px rgba(160, 187, 7, 0.4),
+            0 0 50px rgba(10, 27, 54, 0.8);
+
+        .card-header {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            
+        }
+
+    }
+
+    .icon {
+        display: inline-block;
+        background-color: #fbff0071;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .parent-vis {
+        /* Pasa de 2 columnas a 1 sola columna vertical */
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+
+    .sub-parent01 {
+        /* flex-direction: column-reverse; */
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 380px;
+        padding: 24px;
+
+        .vis-title {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            align-items: center;
+        }
+
+        .vis-text-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            align-items: center;
+
+            .vis-text {
+                color: #ffffff;
+                font-size: 1.05rem;
+                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            }
+
+            .tab-badge {
+                margin-top: 5px;
+            }
+        }
+
+        .vis-img-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            .vis-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            /* Overlay oscuro integrado directamente para darle contraste al texto */
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(11, 21, 40, 0.75);
+            }
+        }
+
+    }
+
+
+    .sub-parent02
+    {
+        grid-template-columns: 1fr;
+    }
+}
